@@ -15,8 +15,5 @@ for movie in g_data:
         title= trmovie.find("td","titleColumn").contents[1].text
         rating= trmovie.find("td","ratingColumn").contents[1].text
         print rank,title,rating
-        movies =[title,rating]
-        fp=io.open(completeName, "a",encoding="utf-8")
-        fp.write(title)
-        fp.close()
+        
         
